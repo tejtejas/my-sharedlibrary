@@ -32,7 +32,7 @@ environment {
         stage('PUSH HUB') { 
 		agent{label 'docker'}
             		steps {
-			            sh 'sudo docker push $registry:$dockerTag'                   	
+			            sh 'docker push $registry:$dockerTag'                   	
                 	}    
         }
         
